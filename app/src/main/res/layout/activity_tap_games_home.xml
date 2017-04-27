@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="prankur.tapgames.TapGamesHome">
+
+    <android.support.v7.widget.Toolbar
+        android:id = "@+id/app_barMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@color/primaryColor"
+        android:fitsSystemWindows = "true"
+        app:theme = "@style/myCustomToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height = "wrap_content"
+                android:id="@+id/activity_name"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a game!"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/choosetxt"
+        android:foregroundGravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="86dp"
+        android:textColor="#00000f"
+        android:layout_below="@+id/app_barMain"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choosetxt"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:id="@+id/tapmeselect"
+            android:layout_height="180dp"
+            android:src="@mipmap/logo_main_app" />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="right"
+            android:id="@+id/tapoutselect"
+            android:src="@mipmap/icon_main_round"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAP ME"
+        android:textSize="25dp"
+        android:textColor="#00000f"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="52dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAP OUT"
+        android:textSize="25dp"
+        android:textColor="#00000f"
+        android:layout_gravity="bottom"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp" />
+</RelativeLayout>

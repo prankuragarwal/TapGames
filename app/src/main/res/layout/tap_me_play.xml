@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000f"
+    tools:context="prankur.tapgames.TapMePlay">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/scorell"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:weightSum="10"
+        android:background="#00000f"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignEnd="@+id/tapll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:typeface="serif"
+            android:textSize="33sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/scoretxt"
+            android:textAlignment="center"
+            android:layout_weight="10.61" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/colbarll1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/wheelimg"
+        android:background="@color/color1"
+        android:orientation="horizontal"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/colbarll2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/wheelimg"
+        android:background="@color/color2"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/colbarll3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/wheelimg"
+        android:background="@color/color3"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/colbarll4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/wheelimg"
+        android:background="@color/color4"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/colbarll5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/wheelimg"
+        android:background="@color/color5"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/colbarll6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/wheelimg"
+        android:background="@color/color6"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/wheelimg"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fbff00"
+        android:id="@+id/tapll"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAP!"
+            android:id="@+id/taptxt"
+            android:textColor="#00000f"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:typeface="serif"
+            android:foregroundGravity="center"
+            android:textSize="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="prankur.tapgames">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tapgamesicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TapGamesHome">
+
+        </activity>
+        <activity android:name=".TapOutPlayGame" />
+        <activity android:name=".Developers" />
+        <activity android:name=".Highscore" />
+        <activity android:name=".TapOutHome" >
+
+        </activity>
+        <activity android:name=".TapOutAbout" />
+        <activity android:name=".TapOutSplash"></activity>
+        <activity android:name=".TapMeHome" />
+        <activity android:name=".TapMePlay" />
+        <activity android:name=".TapMeSplash"></activity>
+        <activity android:name=".TapMeAbout" />
+        <activity android:name=".Highscores" />
+        <activity android:name=".TapGamesSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tap Games</string>
+    <string name="howto">
+        The game displays a series of images on the display. What the user has to do is tap the “Yes” button when the displayed image is the same as the last image and tap “No” if it is not. The score of the user increases by 1 for every correct and the game gets over when a wrong move is made. The main aim is to get the highest possible score in a time of 60 seconds. Begin the game by pressing the “Yes” button when the first image is displayed.
+    </string>
+    <string name="howtome">
+        The game area features a rotating wheel which has 6 segments, each of a different colour. The screen has a coloured bar at the top which indicates the colour to be tapped. How this works is that the user has to tap in the “Tap Zone” when the colour in the tap zone matches the colour of the bar. Every correct tap earns the user 1 point while a wrong one exits the game.
+    </string>
+    <string name="credits">Credits</string>
+    <string name="action_settings">Settings</string>
+    <string name="highscore">Highscore</string>
+    <string name="title_activity_developers">Developers</string>
+    \
+</resources>

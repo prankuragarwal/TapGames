@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff"
+tools:context="prankur.tapgames.TapOutPlayGame">
+
+<include android:id="@+id/app_bar"
+    layout="@layout/app_bar"
+    />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playimageone"
+    android:src="@mipmap/one"
+    android:layout_above="@+id/yesll"
+    android:layout_below="@+id/sectext"
+    android:layout_alignParentStart="true" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playimagezero"
+    android:src="@mipmap/zero"
+    android:layout_above="@+id/yesll"
+    android:layout_below="@+id/sectext"
+    android:layout_alignParentStart="true" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playimagetwo"
+    android:src="@mipmap/two"
+    android:layout_above="@+id/yesll"
+    android:layout_below="@+id/sectext"
+    android:layout_alignParentStart="true" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playimagethree"
+    android:src="@mipmap/three"
+    android:layout_above="@+id/yesll"
+    android:layout_below="@+id/sectext"
+    android:layout_alignParentStart="true" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playimagefour"
+    android:src="@mipmap/four"
+    android:layout_below="@+id/sectext"
+    android:layout_above="@+id/yesll"
+    android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/sectext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 60 Sec"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/yesll"/>
+
+    <TextView
+        android:id="@+id/scoretex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        android:layout_alignTop="@+id/sectext"
+        android:layout_alignEnd="@+id/noll" />
+
+<LinearLayout
+    android:id="@+id/yesll"
+    android:orientation="horizontal"
+    android:gravity="end|center_vertical"
+    android:layout_marginLeft="17sp"
+    android:layout_width="150sp"
+    android:layout_height="80dp"
+    android:weightSum="10"
+    android:layout_marginBottom="30dp"
+    android:background="#fc7100"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:typeface="serif"
+        android:textSize="33sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:id="@+id/yes"
+        android:textAlignment="center"
+        android:layout_weight="9.67" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/noll"
+    android:orientation="horizontal"
+    android:gravity="end|center_vertical"
+    android:layout_width="150sp"
+    android:layout_marginRight="17sp"
+    android:layout_height="80dp"
+    android:weightSum="10"
+    android:background="#fc7100"
+    android:layout_alignTop="@+id/yesll"
+    android:layout_alignParentEnd="true"
+    android:layout_alignBottom="@+id/yesll">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:typeface="serif"
+        android:textSize="33sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:id="@+id/no"
+        android:textAlignment="center"
+        android:layout_weight="9.67" />
+</LinearLayout>
+
+</RelativeLayout>
